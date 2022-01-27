@@ -1,4 +1,7 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import Vue, { createApp } from "vue";
+import App from "./App.vue";
+import { firestorePlugin } from "vuefire";
 
-createApp(App).mount('#app')
+Vue.use(firestorePlugin);
+
+createApp(App).mount("#app");
